@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Nate Rubin</title>
+        <style type="text/css">
+            body {
+                margin: 40px auto;
+                max-width: 650px;
+                line-height: 1.6;
+                font-size: 24px;
+                color: #444;
+                padding: 0 10px;
+            }
+            h1, h2, h3 {
+                line-height: 1.2
+            }
+            img {
+                width: 100%;
+            }
+            ul {
+                list-style: none;
+            }
+            a {
+                color: maroon;
+                font-style: italic;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Nate Rubin</h1>
+        <img src="prof_pic.jpg" alt="Picture of Nate" />
+        <ul>
+            <li>
+                <a href="http://photos.naterubin.com">Photos</a>
+            </li>
+            <li>
+                <a href="https://github.com/80vs90">Programs</a>
+            </li>
+            <li>
+                <a href="javascript:" id="bands-link">Bands</a>
+                <ul id="bands-list" style="display: none">
+                    <li>
+                        Current
+                        <ul>
+                            <li><a href="https://heavypockets.bandcamp.com">Heavy Pockets</a></li>
+                            <li><a href="https://teratomato.bandcamp.com">Teratoma</a></li>
+                            <li><a href="https://gashhh.bandcamp.com">GASH</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Defunct
+                        <ul>
+                            <li><a href="https://brnh.bandcamp.com">Billy Rayugn</a></li>
+                            <li><a href="https://zauberhexenh.bandcamp.com">Zauberhexe</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        ...and Otherwise
+                        <ul>
+                            <li><a href="https://hayfever.bandcamp.com">Hay Fever</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="mailto:nrubin@wildcats.unh.edu">Contact</a>
+            </li>
+        </ul>
+
+        <script>
+            var bands_link = document.getElementById('bands-link'),
+                bands_list = document.getElementById('bands-list');
+
+            bands_link.onclick = function() {
+                if (bands_list.style.display == 'none') {
+                    bands_list.style.display = 'block';
+                } else {
+                    bands_list.style.display = 'none';
+                }
+            }
+        </script>
+    </body>
+</html>
