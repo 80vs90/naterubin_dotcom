@@ -35,12 +35,6 @@ function receiveData(data) {
 
 var recordsApp = function(state, action) {
     switch(action.type) {
-        case 'INITIAL_LOAD':
-            return initialLoad();
-        case 'NEXT_PAGE':
-            return nextPage(state);
-        case 'PREV_PAGE':
-            return prevPage(state);
         case 'REQUEST_DATA':
             return {
                 loading: true,
