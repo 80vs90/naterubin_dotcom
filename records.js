@@ -131,7 +131,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        onInitialLoad: function() { dispatch(fetchData('https://api.discogs.com/users/80vs90/collection?sort=artist')); },
+        onInitialLoad: function() { dispatch(fetchData('https://api.discogs.com/users/80vs90/collection/folders/0/releases?sort=artist')); },
         onNextPageClick: function(link) { dispatch(fetchData(link)); },
         onPrevPageClick: function(link) { dispatch(fetchData(link)); }
     };
